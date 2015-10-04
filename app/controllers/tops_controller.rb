@@ -1,6 +1,5 @@
 class TopsController < ApplicationController
 	def index
-		@tops = top.all
-		
+		@users = User.all
 	end
 end
