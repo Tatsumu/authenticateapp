@@ -3,5 +3,4 @@ class TopsController < ApplicationController
 		@users = User.all
 	end
 
-
 end
