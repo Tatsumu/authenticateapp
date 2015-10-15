@@ -2,7 +2,7 @@
 
 <p><%= link_to "Singup", signup_path %>
 <p><%= link_to "Login", signin_path %>
-<p><%= link_to "Login", signout_path %>
-<% if current_user %>
-  <p><%= current_user.email %></p>
+<p><%= link_to "Logout", signout_path %>
+<% if @current_user %>
+  <p><%= @current_user.email %></p>
 <% end %>

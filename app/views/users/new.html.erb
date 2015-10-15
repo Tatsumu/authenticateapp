@@ -1,6 +1,6 @@
 <h1>Add New</h1>
 
-<%= form_for @users do |f| %>
+<%= form_for @user do |f| %>
 
 <p>
 	<%= f.label :email %><br>
@@ -9,8 +9,8 @@
 	<%= f.text_field :password %><br>
 	<%= f.label :password_confirmation %><br>
 	<%= f.text_field :password_confirmation %>
-	<% if @users.errors.any? %>
-	<%= @users.errors.messages[:email][0] %>
+	<% if @user.errors.any? %>
+	<%= @user.errors.messages[:email][0] %>
 	<% end %>
 
 </p>
