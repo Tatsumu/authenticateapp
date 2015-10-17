@@ -2,9 +2,11 @@ Authenticateapp::Application.routes.draw do
   root 'tops#index'
   get 'signup', to: 'users#new'
   resources :users, only: [:create]
+  get 'users', to: 'users#create'#怪しい
   get 'signin', to: 'sessions#new'
   delete 'signout', to: 'sessions#destroy'
   resources :sessions, only: [:create]
+
   
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
