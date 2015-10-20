@@ -6,6 +6,7 @@ Authenticateapp::Application.routes.draw do
   get 'signin', to: 'sessions#new'
   delete 'signout', to: 'sessions#destroy'
   resources :sessions, only: [:create]
+  get 'sessions', to: 'sessions#new'#怪しい
 
   
   # The priority is based upon order of creation: first created -> highest priority.
